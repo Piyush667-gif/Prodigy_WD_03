@@ -10,8 +10,11 @@ Play against a friend or challenge the computer in this beautifully animated ver
 #### 🌟 Preview
 
 🔗 Live Demo: [Click Here to Play the Game](https://piyush667-gif.github.io/Prodigy_WD_03/)
-
-![Tic-Tac-Toe Animation](assets/tic-tac-toe-demo.gif)
+<td>
+    <a href="url_to_php?x=1&y=1&action=move">
+        <img src="url_to_php?x=1&y=1&action=view">
+    </a>
+</td>
 ---
 
 ## ✨ Features
