@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Mode Selection Screen -->
+        <div id="mode-selection" class="mode-selection">
+            <h1 class="game-title">🎮 Tic Tac Toe</h1>
+            <div class="mode-buttons">
+                <button class="mode-btn" onclick="startGame('friend')">
+                    <span class="mode-icon">👥</span>
+                    <span class="mode-text">Play with Friend</span>
+                    <span class="mode-desc">Player vs Player</span>
+                </button>
+                <button class="mode-btn" onclick="startGame('computer')">
+                    <span class="mode-icon">🤖</span>
+                    <span class="mode-text">Play with Computer</span>
+                    <span class="mode-desc">Player vs AI (Easy)</span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Game Screen -->
+        <div id="game-screen" class="game-screen hidden">
+            <!-- Header -->
+            <div class="game-header">
+                <h2 id="game-mode-title">Player vs Player</h2>
+                <button class="back-btn" onclick="backToMenu()">← Back to Menu</button>
+            </div>
+
+            <!-- Game Info -->
+            <div class="game-info">
+                <div class="turn-display">
+                    <span id="current-turn">Player 1's Turn</span>
+                </div>
+                <div class="scoreboard">
+                    <div class="score">
+                        <span class="player-name" id="player1-name">Player 1 (X)</span>
+                        <span class="score-value" id="player1-score">0</span>
+                    </div>
+                    <div class="score">
+                        <span class="player-name" id="player2-name">Player 2 (O)</span>
+                        <span class="score-value" id="player2-score">0</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Game Board -->
+            <div class="game-board" id="game-board">
+                <div class="cell" data-index="0" onclick="makeMove(0)"></div>
+                <div class="cell" data-index="1" onclick="makeMove(1)"></div>
+                <div class="cell" data-index="2" onclick="makeMove(2)"></div>
+                <div class="cell" data-index="3" onclick="makeMove(3)"></div>
+                <div class="cell" data-index="4" onclick="makeMove(4)"></div>
+                <div class="cell" data-index="5" onclick="makeMove(5)"></div>
+                <div class="cell" data-index="6" onclick="makeMove(6)"></div>
+                <div class="cell" data-index="7" onclick="makeMove(7)"></div>
+                <div class="cell" data-index="8" onclick="makeMove(8)"></div>
+            </div>
+
+            <!-- Game Controls -->
+            <div class="game-controls">
+                <button class="control-btn reset-btn" onclick="resetBoard()">🔄 Reset Board</button>
+                <button class="control-btn new-game-btn" onclick="newGame()">🎮 New Game</button>
+            </div>
+
+            <!-- Game Result Modal -->
+            <div id="result-modal" class="modal hidden">
+                <div class="modal-content">
+                    <h3 id="result-message">Player 1 Wins!</h3>
+                    <div class="modal-buttons">
+                        <button class="modal-btn" onclick="resetBoard()">Play Again</button>
+                        <button class="modal-btn secondary" onclick="backToMenu()">Main Menu</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
