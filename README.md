@@ -19,10 +19,10 @@ Play against a friend or challenge the computer in this beautifully animated ver
 
 - ✅ Two Player Mode (Play with your friend)
 - 🤖 Single Player Mode (Play against computer)
-- 🎨 Animated UI with CSS transitions
+- 🎨  UI with CSS transitions
 - 📱 Responsive design for mobile and desktop
 - 🔁 Restart Game functionality
-- 💥 Win highlight animation
+- 💥 Win highlight 
 
 ---
 
@@ -42,8 +42,4 @@ Play against a friend or challenge the computer in this beautifully animated ver
 
 ---
 
-## 🛠️ Installation
 
-1. Clone the repository:
-   `bash
-   git clone https://github.com/your-username/tic-tac-toe-game.git
