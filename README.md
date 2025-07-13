@@ -9,7 +9,7 @@ Play against a friend or challenge the computer in this beautifully animated ver
 
 ## 🌟 Preview
 
-![Tic-Tac-Toe Animation](assets/tic-tac-toe-demo.gif)
+![Tic-Tac-Toe Animation](https://piyush667-gif.github.io/Prodigy_WD_03/)
 
 > 🎥 *Replace the above image with a demo GIF of your game.*
 
